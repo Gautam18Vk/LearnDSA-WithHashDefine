@@ -1,0 +1,38 @@
+💻 Practice Problem: FizzBuzz
+📝 Problem Statement
+
+Given an integer n, print:
+🟢 "FizzBuzz" → if n is divisible by both 3 and 5
+🟣 "Fizz" → if n is divisible only by 3
+🟠 "Buzz" → if n is divisible only by 5
+⚪ n → if none of the above conditions are true\
+  | Input |  Output  |
+| :---: | :------: |
+|   3   |   Fizz   |
+|   5   |   Buzz   |
+|   15  | FizzBuzz |
+|   7   |     7    |
+
+  /////Solution/////
+  #include <iostream>
+using namespace std;
+
+int main() {
+    int n;
+    cin >> n;
+
+    if (n % 3 == 0 && n % 5 == 0) {
+        cout << "FizzBuzz" << endl;
+    }
+    else if (n % 3 == 0) {
+        cout << "Fizz" << endl;
+    }
+    else if (n % 5 == 0) {
+        cout << "Buzz" << endl;
+    }
+    else {
+        cout << n << endl;
+    }
+
+    return 0;
+}
