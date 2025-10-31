@@ -1,0 +1,22 @@
+🛑 Break Statement
+break immediately stops the loop and jumps out of it.
+for (int i = 1; i <= 5; i++) {
+    if (i == 3)
+        break;
+    cout << i << " ";
+}
+🖥️ Output
+1 2
+When i is 3, the loop says “I’m done” and exits completely.
+
+
+🔁 Continue Statement
+continue skips the current iteration and moves to the next one.
+for (int i = 1; i <= 5; i++) {
+    if (i == 3)
+        continue;
+    cout << i << " ";
+}
+🖥️ Output
+1 2 4 5
+When i equals 3, it just skips printing that value and keeps going.
